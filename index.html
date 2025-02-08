@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine Romantis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Hari Valentine! ❤️</h1>
+        <p>Pilih kartu dan tulis pesan romantismu!</p>
+        
+        <div class="card-selection">
+            <img src="images/card1.jpg" alt="Kartu 1" class="card" onclick="selectCard('images/card1.jpg')">
+            <img src="images/card2.jpg" alt="Kartu 2" class="card" onclick="selectCard('images/card2.jpg')">
+            <img src="images/card3.jpg" alt="Kartu 3" class="card" onclick="selectCard('images/card3.jpg')">
+        </div>
+
+        <textarea id="message" placeholder="Tulis pesan romantismu di sini..."></textarea>
+
+        <button onclick="generateCard()">Buat Kartu</button>
+
+        <div id="result" class="hidden">
+            <h2>Kartu Digitalmu:</h2>
+            <div id="card-output"></div>
+            <button onclick="downloadCard()">Download</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
